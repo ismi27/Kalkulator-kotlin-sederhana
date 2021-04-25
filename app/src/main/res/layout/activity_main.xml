@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/circular_grey_bordersolid"
+                android:ems="8"
+                android:hint="Bilangan 1"
+                android:inputType="number|numberDecimal"
+                android:textColorHint="@color/goodgrey"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/circular_grey_bordersolid"
+                android:ems="8"
+                android:hint="Bilangan 2"
+                android:inputType="number|numberDecimal"
+                android:padding="12dp"
+                android:textColorHint="@color/goodgrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="5">
+
+                <Button
+                    android:id="@+id/btnTambah"
+                    android:layout_width="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circular_yellow_bordersolid"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/goodgrey"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btnKurang"
+                    android:layout_width="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circular_yellow_bordersolid"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/goodgrey"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/etHasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circular_grey_bordersolid"
+                    android:padding="12dp"
+                    android:hint="Hasil"
+                    android:editable="false"
+                    android:textColorHint="@color/goodgrey"
+                    android:ems="5"
+                    android:inputType="none" />
+
+                <Button
+                    android:id="@+id/btnKali"
+                    android:layout_width="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circular_yellow_bordersolid"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/goodgrey"
+                    android:text="*" />
+
+                <Button
+                    android:id="@+id/btnBagi"
+                    android:layout_width="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circular_yellow_bordersolid"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/goodgrey"
+                    android:text="/" />
+
+                <Button
+                    android:id="@+id/btnModulo"
+                    android:layout_width="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circular_yellow_bordersolid"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/goodgrey"
+                    android:text="%" />
+            </GridLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_margin="100dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/goodgrey"
+            android:textStyle="bold|italic"
+            android:text="@string/copyright"/>
+    </LinearLayout>
+</RelativeLayout>
